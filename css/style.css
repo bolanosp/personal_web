@@ -10858,7 +10858,7 @@ h5,
   .ftco-navbar-light.scrolled .nav-item > .nav-link {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    padding-bottom: 20px !important;
+    padding-bottom: 1rem !important;
   }
 }
 .ftco-navbar-light.scrolled .nav-item.active > a {
@@ -10889,14 +10889,11 @@ h5,
   .ftco-navbar-light.scrolled .navbar-nav {
     background: none;
     border-radius: 0px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
     margin-left: 0 !important;
   }
 }
 .ftco-navbar-light.scrolled .navbar-toggler {
   border: none;
-  color: rgba(0, 0, 0, 0.5) !important;
   border-color: rgba(0, 0, 0, 0.5) !important;
   cursor: pointer;
   text-transform: uppercase;
@@ -11063,7 +11060,15 @@ h5,
   .owl-carousel.home-slider .slider-item .slider-text .one-third {
     width: 100%;
     z-index: 0;
+    top: 10%;
   }
+}
+
+@media (max-width: 576px) {
+  .owl-carousel.home-slider .slider-item .slider-text .one-third {
+    top: 40%;
+  }
+
   .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
     opacity: 0;
   }
@@ -11093,7 +11098,7 @@ h5,
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 30%;
     z-index: 1;
     padding: 3em;
   }
@@ -12254,9 +12259,18 @@ textarea.form-control {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
+.contact-section .box .icon:hover {
+  background: #0cc0df;
+}
+
+.contact-section .box .icon:hover > span {
+  color: #fff;
+}
+
 .contact-section .box .icon span {
   color: #0cc0df;
-  font-size: 30px;
+  font-size: 40px;
 }
 .contact-section .box h3 {
   font-size: 17px;
